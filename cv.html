@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" media="all" href="css/website.css">
+		<title>Gizem Esra Unlu</title>
+        <meta property="og:title" content="Gizem Unlu">
+        <meta name="twitter:title" content="Gizem Unlu">
+
+        <meta name="author" content="Gizem Unlu">
+
+        <meta name="description" content="Gizem Unlu, 3rd PhD student, Computer Vision.">
+        <meta property="og:description" content="Gizem Unlu, 3rd PhD student, Computer Vision.">
+        <meta name="twitter:description" content="Gizem Unlu, 3rd PhD student, Computer Vision.">
+
+        <meta property="og:image" content="imgs/headshot_neck.jpg">
+        <meta property="og:image" content="imgs/headshot_neck.jpg">
+        <meta name="twitter:image" content="imgs/headshot_neck.jpg">
+
+        <link rel="icon" href="imgs/headshot_thumbnail.png">
+
+    </head>
+    <body id="body">
+        <script>
+            window.DEBUG_OUTPUT=false;
+            if ( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)
+            )
+            {
+
+            }
+            else
+            {
+                resize_window();
+                window.addEventListener('resize', resize_window);
+
+                function resize_window(e, target_width_ratio=0.7, max_aspect_ratio=11.0/9.0) {
+
+                    document.getElementById('body').style.height = window.innerHeight + "px";
+
+
+                    var ideal_target_width = window.innerWidth * target_width_ratio
+                    target_width = ideal_target_width
+
+                    if (ideal_target_width > window.innerHeight * max_aspect_ratio) {
+                        target_width = window.innerHeight * max_aspect_ratio
+                    }
+
+                    var padding_requirement = window.innerWidth - target_width;
+
+                    if (padding_requirement < 0.0) {
+                        padding_requirement = 2.0;
+                    }
+
+                    document.getElementById('body').style.padding =  "2px 2px 2px " + padding_requirement/2 + "px";
+                    document.getElementById('body').style.width = target_width + "px";
+
+
+                    if (window.DEBUG_OUTPUT) {
+                        console.log("Window size         ", window.innerWidth, window.innerHeight);
+                        console.log("Initial size        ", ideal_target_width, window.innerHeight);
+                        console.log("Aspect adjusted size", target_width, window.innerHeight);
+                        console.log("Padding Requirement ", padding_requirement);
+                    }
+
+                }
+            }
+
+
+        </script>
+    <div>
+        <table>
+            <tr>
+                <!-- <td class="imStyle" style="vertical-align:center; text-align: left"> -->
+                <td style="vertical-align:top;">
+                    <p style="text-align:left; margin-bottom:1px">
+                    <b style="font-size:2.0em; color: #347deb;">Gizem Esra Unlu</b>  <br/>
+
+                    <div style="font-size:1.4em;"><a href="resume/Gizem_Esra_Unlu_Resume.pdf">Resume</a> / <a href="https://scholar.google.com/citations?hl=en&user=XItbCLgAAAAJ">Google Scholar</a>  /  <a href="https://github.com/unlugi">GitHub</a>  /  <a href="linkedin">LinkedIn</a> / <a href="mailto:gizem.unlu.19@ucl.ac.uk">Email</a></div> <br/>
+
+                    <p class="projectInfo" style="margin-top:10px; width:95%">Hi! I am Gizem Unlu, a 3rd PhD student at
+                        University College London (UCL) in the Computer Science Department. I am supervised by
+                        <a href = "http://www0.cs.ucl.ac.uk/staff/g.brostow/">Prof. Gabriel Brostow</a>. </p>
+
+                    <p class="projectInfo" style="margin-top:10px; width:95%">I am excited about sketch research, more specifically 3D
+                        understanding of human sketches. My focus is on deep learning for content creation; specifically
+                        image and sketch-based 3D reconstruction for creativity. </p>
+
+                </td>
+                <td style="vertical-align:center; width:19%; padding-bottom: 0%;">
+                    <img style="width:100%" src="imgs/headshot_neck.jpg">
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- <span style="float:right">
+        </span> -->
+
+        <!--########################################################Publications########################################################-->
+
+        <b class="sectionHeader">Publications</b>
+        <hr class="horizontalLine">
+
+        <!-- 3DV -->
+        <table class="tableDet">
+            <tr>
+                <td class="image_column">
+                    <img class="project_image" src="imgs/sketch2man.png">
+                </td>
+                <td style="vertical-align:top">
+                    <p class = "pubTitle">Interactive Sketching of Mannequin Poses</p>
+                    <p class="projectInfo"><b>Gizem Esra Unlu</b>, Mohamed Sayed, Gabriel Brostow </p>
+                    <p class="projectInfo">International Conference on 3D Vision (3DV) 2022 </p>
+                    <a class="projectInfo" href = "http://visual.cs.ucl.ac.uk/pubs/sketch2mannequin/index.html">Project Page</a>,
+                    <a class="projectInfo" href = "http://visual.cs.ucl.ac.uk/pubs/sketch2mannequin/Sketch2Mannequin_paper.pdf">Paper</a>,
+                    <a class="projectInfo" href = "https://youtu.be/6BOPPZ-SGbk">Video</a>,
+                    <a class="projectInfo" href = "bibs/unlu2022Interactive.bib">Bibtex</a> <br/>
+                </td>
+            </tr>
+        </table>
+
+        <!--########################################################Education########################################################-->
+
+        <b class="sectionHeader">Education</b>
+        <hr class="horizontalLine">
+
+        <!-- PhD -->
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "TATimes">February 2020 -</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "pubTitle">PhD Student in Computer Vision (University College London)</p>
+                <p class="projectInfo">Supervised by <a href = "http://www0.cs.ucl.ac.uk/staff/g.brostow/">Prof. Gabriel Brostow</a>
+                and <a href = "https://scholar.google.co.uk/citations?user=ZO3Ek1gAAAAJ&hl=en">Dr. Iasonas Kokkinos</a>.</p>
+            </td>
+        </tr>
+        </table>
+
+        <!-- MSc -->
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "TATimes">September 2017 - January 2020</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "pubTitle">MSc Computer Engineering (Bogazici University)</p>
+                <p class="projectInfo">Thesis: "Image Deblurring from Sign Language Videos" Supervised by <a href = "https://www.cmpe.boun.edu.tr/people/lale.akarun">Prof. Lale Akarun</a>.
+		    <!-- <p class="projectInfo"> <i>GPA:?/4.0</i> </p>   -->
+            </td>
+        </tr>
+        </table>
+
+        <!-- Undergrad -->
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "TATimes">September 2012 - June 2017</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "pubTitle">Bachelor of Computer Engineering (Istanbul Technical University) (Double Major)</p>
+                <p class="projectInfo">Thesis: 3D Facial Reconstruction from RGB Images. Supervised by
+                <a href="https://web.itu.edu.tr/ekenel/">Prof. Hazim Ekenel</a>. </p>
+                <!-- <p class="projectInfo"> <i>GPA:?/4.0</i> </p>   -->
+            </td>
+
+        </tr>
+        </table>
+
+	  <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "TATimes">September 2012 - June 2017</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "pubTitle">Bachelor of Mathematics Engineering (Istanbul Technical University)</p>
+                <p class="projectInfo">Thesis: Filtering Techniques in Speckle Noise Reduction. Supervised by
+                <a href="https://web.itu.edu.tr/tungab/">Dr. Burcu Tunga</a>. </p>
+                <!-- <p class="projectInfo"> <i>GPA:?/4.0</i> </p>   -->
+            </td>
+        </tr>
+        </table>
+
+        <!--########################################################Work########################################################-->
+
+        <b class="sectionHeader">Work Experience</b>
+        <hr class="horizontalLine">
+
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+                <p class = "TATimes">2014-2016, <br> Istanbul</p>
+            </td>
+            <td class="workDesc" >
+                <p class ="pubTitle"> Mercedes-Benz Istanbul,  <span class="projectInfo">IT Intern </span> </p>
+                <p class="projectInfo">Worked for IT SAP&Rollout Services</p>
+			<!--<span class="projectInfo">ff </span> -->
+            </td>
+            <td style="vertical-align:top">
+                <span class="projectInfo"> </span>
+            </td>
+        </tr>
+        </table>
+
+        </table>
+                <!--########################################################Other Projects########################################################-->
+
+
+        <b class="sectionHeader">Other Projects</b>
+        <hr class="horizontalLine">
+
+        <table class="tableDet">
+            <tr>
+                <td class="image_column">
+                    <img class="project_image" src="imgs/inpainting.png">
+                </td>
+                <td style="vertical-align:top">
+                    <p class = "pubTitle">ECCV 2018 Looking at People  Satellite Workshop Challenge <span style="font-weight:normal"></span></p>
+                    <p class="projectInfo">Image Completion Competition 1st place </p>
+                    <p class="projectInfo">Publication: <a href = "https://doi.org/10.1007/978-3-030-25614-2_9">Person Inpainting with Generative Adversarial Networks</a>
+.</p>
+                </td>
+            </tr>
+        </table>
+
+        <!--########################################################Teaching########################################################-->
+
+        <b class="sectionHeader">Teaching</b>
+        <hr class="horizontalLine">
+
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "subHeadings">University College London</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo">Machine Vision TA - 2020, 2021, 2022</p>
+            </td>
+        </tr>
+        </table>
+
+	  <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "subHeadings">Bogazici University</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo">Computer Vision TA - 2019</p>
+            </td>
+        </tr>
+        </table>
+
+      <!--
+	  <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "subHeadings">Istanbul Technical University</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo">? TA - 2015</p>
+            </td>
+        </tr>
+        </table>
+        -->
+        <!--########################################################Skills########################################################-->
+        <b class="sectionHeader">Skills</b>
+        <hr class="horizontalLine">
+
+        <!-- IP -->
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+                <p class = "subHeadings">Languages</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo">Python, C++, MATLAB, Java/Javascript</p>
+            </td>
+        </tr>
+        </table>
+        <!-- IP -->
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "subHeadings">Deep Learning Libraries</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo">Pytorch(primary), Tensorflow </p>
+            </td>
+        </tr>
+        </table>
+
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "subHeadings">Useful Tools</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo">Blender, Adobe Illustrator, Adobe After Effects</p>
+            </td>
+        </tr>
+        </table>
+
+        <table class="tableDet">
+        <tr>
+            <td class="from_to" style="vertical-align:center; text-align: left">
+            <p class = "subHeadings">Hobbies</p>
+            </td>
+            <td style="vertical-align:top">
+                <p class = "projectInfo"> Dancing, Yoga, Baking</p>
+            </td>
+        </tr>
+        </table>
+    </div> <br/><br/><br/>
+
+    </body>
+</html>
