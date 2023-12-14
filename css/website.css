@@ -54,6 +54,15 @@ body {
     font-weight:bold
 }
 
+.subSubHeadings {
+    font-size:12pt;
+    /* font-size:10px;  */
+    margin-bottom:0.1em;
+    margin-top:0.1em;
+     font-style: italic;
+    font-weight:bold
+}
+
 .projectInfo {
     font-size:16pt;
     margin-bottom:0.1em; 
@@ -94,11 +103,12 @@ body {
 }
 
 #footer {
+        opacity: 50%;
         position: static;
         padding: 10px 10px 0px 10px;
         bottom: 0;
         width: 100%;
         /* Height of the footer*/
         height: 20px;
-        background: #d3d3d3;
+        background: #f2f2f2;
 }
